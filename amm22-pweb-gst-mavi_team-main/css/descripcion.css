@@ -1,0 +1,205 @@
+/*Para el cuerpo pagina*/
+body {
+    background-image: url(../img/fondo.jpeg);
+    background-size: cover;
+}
+
+/*Titulos y parrafos*/
+.titulo3 {
+    background: linear-gradient(rgb(54, 63, 114), rgb(97, 129, 179), rgb(54, 63, 114));
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-family: texto;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: -4px 3px rgb(110, 138, 173);
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/*Botones*/
+
+#menu {
+    margin: 5px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: texto1;
+    z-index: 1;
+}
+
+#menu a {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: rgb(54, 52, 52);
+    background: rgb(180, 212, 238);
+    line-height: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    box-shadow: rgb(110, 138, 173) -1px -1px 0px 1px, rgb(34, 44, 54) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 1px 3px;
+    transition: all 0.2s;
+    font-family: texto1;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#menu a:hover {
+    box-shadow: rgb(110, 138, 173) -1px -1px 0px 1px, rgb(34, 44, 54) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 1px 3px;
+    transform: scale(1.01);
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.content{
+    padding: 16px;
+}
+.fixed + .content{
+    padding-top: 60px;
+}
+
+/*Section*/
+.objetivo {
+    font-family: texto1;
+    color: white;
+    margin: 8px;
+    margin-top: 50px;
+    margin-left: 70px;
+    display: inline;
+    float: left;
+    text-align: center;
+    background: rgb(110, 138, 173);
+    overflow: auto;
+    padding: 30px;
+    border-radius: 0px 35px 35px 35px;
+    -moz-border-radius: 0px 35px 35px 35px;
+    -webkit-border-radius: 0px 35px 35px 35px;
+    border: 5px solid rgb(180, 212, 238);
+    position: relative;
+}
+
+.personajes {
+    font-family: texto1;
+    color: white;
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-left: 355px;
+    margin-bottom: 50px;
+    display: inline;
+    float: left;
+    text-align: left;
+    background: rgb(110, 138, 173);
+    overflow: auto;
+    padding: 30px;
+    border-radius: 35px 35px 35px 35px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 35px 35px 35px 35px;
+    border: 5px solid rgb(180, 212, 238);
+    position: relative;
+}
+
+.instrucciones {
+    font-family: texto1;
+    color: white;
+    margin-top: 90px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    display: inline;
+    float: left;
+    text-align: center;
+    background: rgb(110, 138, 173);
+    overflow: auto;
+    padding: 30px;
+    border-radius: 35px 35px 35px 35px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 35px 35px 35px 35px;
+    border: 5px solid rgb(180, 212, 238);
+    position: relative;
+}
+
+/*Imágenes*/
+.img_right {
+    display: block;
+    width: 450px;
+    margin-top: 80px;
+    margin-right: 70px;
+    float: right;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px black;
+    -moz-box-shadow: 10px 10px 5px black;
+    -webkit-box-shadow: 10px 10px 5px black;
+    -khtml-box-shadow: 10px 10px 5px black;
+    position: relative;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.img_center{
+    width: 600px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px black;
+    -moz-box-shadow: 10px 10px 5px black;
+    -webkit-box-shadow: 10px 10px 5px black;
+    -khtml-box-shadow: 10px 10px 5px black;
+    position: relative;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.centro{
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/* Animaciones de imagenes */
+
+#foto {
+    animation-name: movimiento;
+    animation-timing-function: ease;
+}
+
+#foto1 {
+    animation-name: movimiento1;
+    animation-timing-function: ease;
+}
+
+
+@keyframes movimiento {
+    0%   { transform: translateX(0); }
+    30%  { transform: translateX(-25px); }
+    50%  { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
+@keyframes movimiento1 {
+    0%   { transform: translateX(0); }
+    30%  { transform: translateY(-25px); }
+    50%  { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
+
+/*Tipo de letra*/
+
+@font-face {
+    font-family: texto1;
+    src: url(../res/nasalization-rg.otf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../res/WaitingfortheSunrise.ttf);
+}
