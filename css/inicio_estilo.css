@@ -1,0 +1,235 @@
+/*Imagen de fondo y título del juego*/
+body{
+    background-image: url(../img/fondo.jpeg);
+    background-size: cover;
+}
+
+/*Titulo principal*/         
+.titulo{
+  background: linear-gradient(rgb(54, 63, 114),rgb(97, 129, 179),rgb(54, 63, 114));
+  -webkit-background-clip: text;
+  color: transparent; 
+  font-family: texto1;
+  text-align: center;
+  justify-content: center;
+  font-size: 90px;
+  text-shadow: -4px 3px rgb(110, 138, 173);
+}
+
+/*Divisiones*/
+div{
+  margin: auto;
+  background-color: inherit;
+  align-items: center;
+  justify-content: center;
+  font-family: texto;
+
+  margin-left: 300px;
+
+  margin-left: 25%;
+
+} 
+
+nav{
+  align-items: center;
+}
+
+/*Elige tu personaje*/
+#seleccion{
+  margin-left: 150px;
+}
+.titulo1{
+    border-right: .15em solid rgb(54, 63, 114);
+    font-family: texto;
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(97, 129, 179);
+    justify-content: center;
+    margin-left: 100px;
+    font-weight: 300;
+    text-shadow: -4px 3px rgb(54, 63, 114);
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*Animación para: Elige tu personaje*/
+.titulo1:nth-child(1){
+    width: 10em;
+    -webkit-animation: type 2s steps(30, end);
+    animation: type 2s steps(30, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+/*Boton de elegir personaje*/
+#botonA{
+  margin-left: 300px;
+}
+/*Personaje elegido*/
+#textoP{
+  font-family: texto;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-left: 190px;
+  
+}
+
+/*Introduzca el nombre*/
+.titulo2{
+  border-right: .15em solid rgb(54, 63, 114);
+  font-family: texto;
+  font-size: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgb(97, 129, 179);
+  justify-content: center;
+  font-weight: 300;
+  text-shadow: -4px 3px rgb(54, 63, 114);
+
+}
+
+/*Animación para: Introduzco el nombre*/
+.titulo2:nth-child(1){
+  width: 20em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/*División de nombre no esta al principio*/
+.nombre{
+  display: none;
+}
+
+/*Formulario*/
+::placeholder{
+  color:rgb(54, 63, 114) ;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+form{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 25%;
+}
+
+.boton{
+  border: 4px solid rgb(54, 63, 114);
+  background: rgb(134, 162, 206);
+  border-radius: 5px;
+  text-align: center;
+  font-family: texto;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(54, 63, 114);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 70px;
+}
+
+  
+/*BOTON*/
+
+.botonGeneral{
+  display: inline-block;
+  outline: 0;
+  border:0;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: rgb(54, 52, 52);
+  background: rgb(180, 212, 238);
+  line-height: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  box-shadow: rgb(110, 138, 173) -1px -1px 0px 1px, rgb(34, 44, 54) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 1px 3px;
+  transition: all 0.2s;
+  font-family: texto;
+  margin-left: 10px;
+  margin-top: 5px;
+
+}
+.botonGeneral1{
+  display: inline-block;
+  outline: 0;
+  border:0;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: rgb(54, 52, 52);
+  background: rgb(180, 212, 238);
+  line-height: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  box-shadow: rgb(110, 138, 173) -1px -1px 0px 1px, rgb(34, 44, 54) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 1px 3px;
+  transition: all 0.2s;
+  font-family: texto;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 120px;
+}
+
+.botonGeneral:hover{
+  box-shadow: rgb(110, 138, 173) -1px -1px 0px 1px, rgb(34, 44, 54) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 1px 3px;
+  transform: scale(1.01);
+}
+.botonGeneral1:hover{
+  box-shadow: rgb(110, 138, 173) -1px -1px 0px 1px, rgb(34, 44, 54) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 1px 3px;
+  transform: scale(1.01);
+}
+
+/*Animación de texto*/
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+      border-right: .15em solid grey;
+    }
+    100% {
+      border: none;
+    }
+}
+  
+@-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid grey;
+    }
+    100% {
+      border: none;
+    }
+}
+  
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+}
+
+/*Tipo de letra*/
+@font-face{
+  font-family: texto;
+  src: url(../res/nasalization-rg.otf);
+}
+
+@font-face{
+  font-family: texto1;
+  src: url(../res/WaitingfortheSunrise.ttf);
+}

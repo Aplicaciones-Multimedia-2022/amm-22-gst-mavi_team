@@ -1,0 +1,244 @@
+
+/*Tipo de letra*/
+@font-face{
+    font-family: texto1;
+    src: url(../res/nasalization-rg.otf);
+}
+@font-face{
+    font-family: texto;
+    src: url(../res/WaitingfortheSunrise.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: texto1;
+}
+
+/*Para el cuerpo pagina*/
+body{
+    background-image: url(../img/fondo.jpeg);
+    background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    max-width: 1080px;
+    margin: 50px auto;
+    padding:  0 20px;
+    position: relative;
+}
+
+.wrapper .linea-central{
+    position:absolute;
+    height: 100%;
+    width: 4px;
+    background: white;
+    left: 50%;
+    top: 20px; 
+    transform:translateX(-50%);
+
+}
+
+.wrapper .row{
+    display: flex;  
+    
+}
+
+.wrapper .row-1{
+    justify-content: flex-start;
+
+}
+.wrapper .row-2{
+    justify-content: flex-end;
+}
+
+
+.wrapper .row section{
+    background: white;
+    border-radius: 5px;  /* curvas esquina */
+    width : calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+    
+} 
+/*pestañas*/
+.wrapper .row section::before{
+    position: absolute;
+    content: "";
+    height:15px;
+    width: 15px;
+    background: white;
+    top:30px;
+    z-index:  -1;  /*indica el orden de posicionaamiento, "el nivel" */
+    transform: rotate(45deg);
+  
+}
+.row-1 section::before{
+   right: -7px; 
+}
+.row-2 section::before{
+    left: -7px;
+}
+
+.row section .detalles{
+
+    display:flex;
+    justify-content: space-between;  /*espacio entre 1parada y palabra)*/
+}
+
+
+.row section .detalles .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.row section p{
+    margin: 10px 1px 17px 1px;
+
+}
+
+.row section .icon,.linea-central .scroll-icon{
+    content:'';
+    position: absolute;
+    height: 40px;
+    width:40px;
+    background-color: #f2f2f2 ;
+    border-radius: 50%;
+    line-height: 40px;
+    box-shadow: 0px 0px 5px 1px #fff, inset 0px 2px 0px rgb(0, 0, 0,0.08), 0px 4px 0px 5px rgba(0,0,0,0.05);
+    text-align: center;
+    color:rgb(97, 129, 179) ;
+}
+/* ponemos el circulo en el top of the line */
+.row-1 section .icon{
+    right: -60px;
+}
+/* circulos de izquierda */
+.row-2 section .icon{
+    top: 20px;
+    transform: translateX(-50%, -50%);
+    left: -60px;
+}
+.linea-central .scroll-icon{
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/*Titulos y parrafos*/
+
+.titulo3{
+    background: linear-gradient(rgb(54, 63, 114), rgb(97, 129, 179), rgb(54, 63, 114));
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-family: texto;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: -4px 3px rgb(110, 138, 173);
+} 
+
+/*Botones*/
+
+#menu{
+    margin: 5px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: texto1;
+    z-index: 1;
+    /* margin: top 1px;;
+    margin-bottom: 2px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: texto1; */
+}
+
+#menu a{
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: rgb(54, 52, 52);
+    background: rgb(180, 212, 238);
+    line-height: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    box-shadow: rgb(110, 138, 173) -1px -1px 0px 1px, rgb(34, 44, 54) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 1px 3px;
+    transition: all 0.2s;
+    font-family: texto1;
+    margin-left: 10px;
+    margin-top: 5px;
+    /* display: inline-block;
+    outline: 0;
+    border:0;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: rgb(54, 52, 52);
+    background: rgb(180, 212, 238);
+    line-height: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    box-shadow: rgb(110, 138, 173) -1px -1px 0px 1px, rgb(34, 44, 54) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 1px 3px;
+    transition: all 0.2s;
+    font-family: texto1;
+    margin-left: 10px;
+    margin-top: 1px; */
+
+}
+
+#menu a:hover{
+    box-shadow: rgb(110, 138, 173) -1px -1px 0px 1px, rgb(34, 44, 54) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 1px 3px;
+    transform: scale(1.01);
+}
+
+
+/* ESTO ES PARA QUE CUANDO MINIMICEMOS PANTALLA LA INFORMACIÓN SE REORDENE */
+@media(max-width:790px){
+    .wrapper .linea-central{
+        left: 30px;
+    }
+    .wrapper .row{
+        margin: 30px 0 3px 60px;
+    }
+    .wrapper .row section{
+        width: 100%;
+    }
+    .row-1 section::before{
+        left: -7px;
+    }
+    .row-1 section .icon{
+        left: -60px;
+    }
+}
+
+@media(max-width:440px){
+    .wrapper .linea-central,
+    .row section::before,
+    .row section .icon{
+        display:none;
+    }
+    .wrapper .row{
+        margin: 10px 0;
+    }
+}
+
+
+
