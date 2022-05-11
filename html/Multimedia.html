@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MAVI'S STATION</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/multimedia.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="titulo3">MAVI SUBWAY</h1>
+        </header>
+        
+        <div id="menu">
+
+            <a href="../html/Juego.html"> Juego</a>
+            <a href="../html/Descripcion.html" > Descripción</a>
+            <a href="../html/Autores.html" > Autores</a>
+            <a href="../html/Multimedia.html" onclick="alert('Ya estas en Multimedia')">Multimedia</a>
+            <a href="../html/Desarrollo.html">Desarrollo</a>
+            <a href="../html/Referencias.html">Referencias</a>
+           
+        </div>
+
+        <br>
+
+        <div class="instrucciones">
+            <p>Para la implementación de GStremaer hemos utilizado el puerto 9090. Hemos utlizado los siguientes comandos en la terminal:</p>
+            
+            <p>  sh op2_ogg-con-efecto.sh</p>
+            <p>  python -m SimpleHTTPServer 8080</p>
+        </div>
+
+	    <video id="video" widht='400' height='320' autoplay controls type="video/mp4">
+		    <source src="http://localhost:9090">
+	    </video>
+
+
+    </body>
+    <script language="javascript" type="text/javascript" src="../js/multimedia.js"></script>
+        
+        
+    <script src="../js/multimedia.js"></script>
+    <script src="../js/main.js"></script>
+
+</html>
