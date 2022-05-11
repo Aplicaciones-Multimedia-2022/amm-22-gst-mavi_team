@@ -25,5 +25,6 @@ Le recomendamos ir primero a la página de descripción para conocer las reglas 
 ++++++++++++++++++++++ ENTREGA 2 +++++++++++++++++++++++++++++
 
 Se ha integrado el flujo GStreamer en 'Multimedia.html'.
-NOTA: El vídeo a reproducir se ha sacado de una página web ya que no se ha podido convertir el vídeo explicativo.
+
+NOTA: El vídeo a reproducir se ha sacado de una página web ya que no se ha podido convertir el vídeo explicativo. Además se ha tenido que comprimir el vídeo ya que pesaba mucho.
 
